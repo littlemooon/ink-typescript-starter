@@ -1,0 +1,11 @@
+{
+  "include": ["src"],
+  "exclude": ["node_modules", "**/*.spec.*"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "strict": true,
+    "types": ["jest", "node"]
+  }
+}
