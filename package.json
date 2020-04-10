@@ -8,8 +8,9 @@
     "build": "npm run clean && npx tsc",
     "dev": "npm run build -- --watch",
     "clean": "rm -rf dist",
-    "format": "npx prettier . --write",
-    "test": "npx jest",
+    "lint": "npx prettier .",
+    "lint:fix": "npm run lint -- --write",
+    "test": "npm run lint && npx jest",
     "test:watch": "npm run test -- --watch"
   },
   "files": [
@@ -39,11 +40,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
+      "pre-commit": "npx lint-staged",
       "pre-push": "npm run test && npm run build"
     }
   },
   "lint-staged": {
-    "*": "npm run format"
+    "*": "npm run lint:fix"
   }
 }

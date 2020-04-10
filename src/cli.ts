@@ -7,8 +7,7 @@ export type Flags = {
   name?: string
 }
 
-
-const cli = meow<{name: StringFlag}>(`
+const cli = meow<{ name: StringFlag }>(`
   Usage
     $ ink-typescript-starter
 
