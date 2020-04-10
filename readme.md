@@ -1,11 +1,11 @@
 # ink-typescript-starter
 
-Boilerplate setup for ink and typescript.
+Boilerplate setup for ink and typescript
 
 ## Install
 
 ```bash
-$ npm install --global ink-typescript-starter
+npm install --global ink-typescript-starter
 ```
 
 ## CLI
